@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>株式会社無窮 | MUKYU Inc.</title>
+  <meta name="description" content="株式会社無窮は、AIテクノロジーとソフトウェア開発を通じて、金融分析・業務自動化・次世代デバイスの分野で革新的なソリューションを提供します。">
+  <style>
+    :root {
+      --primary: #1a1a2e;
+      --accent: #4a6cf7;
+      --text: #333;
+      --light: #f8f9fa;
+      --border: #e0e0e0;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: "Helvetica Neue", "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+      color: var(--text);
+      line-height: 1.8;
+    }
+
+    /* Header */
+    header {
+      background: var(--primary);
+      color: #fff;
+      padding: 80px 20px 60px;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 2.4rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      margin-bottom: 8px;
+    }
+    header .subtitle {
+      font-size: 1rem;
+      font-weight: 300;
+      letter-spacing: 0.15em;
+      color: #adb5bd;
+    }
+    header .tagline {
+      margin-top: 24px;
+      font-size: 1.1rem;
+      color: #ced4da;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    /* Section */
+    section {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 60px 20px;
+    }
+    section h2 {
+      font-size: 1.5rem;
+      color: var(--primary);
+      border-bottom: 2px solid var(--accent);
+      padding-bottom: 8px;
+      margin-bottom: 24px;
+    }
+    section + section {
+      border-top: 1px solid var(--border);
+    }
+
+    /* Business cards */
+    .business-cards {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 24px;
+    }
+    @media (min-width: 600px) {
+      .business-cards { grid-template-columns: 1fr 1fr; }
+    }
+    .card {
+      background: var(--light);
+      border-radius: 8px;
+      padding: 24px;
+      border-left: 4px solid var(--accent);
+    }
+    .card h3 {
+      font-size: 1.1rem;
+      color: var(--primary);
+      margin-bottom: 8px;
+    }
+    .card p {
+      font-size: 0.95rem;
+      color: #555;
+    }
+
+    /* Company info table */
+    .info-table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    .info-table th,
+    .info-table td {
+      padding: 12px 16px;
+      text-align: left;
+      border-bottom: 1px solid var(--border);
+      font-size: 0.95rem;
+    }
+    .info-table th {
+      background: var(--light);
+      font-weight: 600;
+      width: 30%;
+      white-space: nowrap;
+    }
+
+    /* Representative */
+    .representative {
+      display: flex;
+      gap: 24px;
+      align-items: flex-start;
+    }
+    .representative .bio {
+      flex: 1;
+    }
+    .representative .bio h3 {
+      font-size: 1.2rem;
+      color: var(--primary);
+      margin-bottom: 4px;
+    }
+    .representative .bio .title {
+      font-size: 0.9rem;
+      color: #666;
+      margin-bottom: 12px;
+    }
+
+    /* Footer */
+    footer {
+      background: var(--primary);
+      color: #adb5bd;
+      text-align: center;
+      padding: 30px 20px;
+      font-size: 0.85rem;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>株式会社無窮</h1>
+  <div class="subtitle">MUKYU Inc.</div>
+  <p class="tagline">AIテクノロジーとソフトウェア開発で、<br>ビジネスの未来を切り拓く</p>
+</header>
+
+<section id="business">
+  <h2>事業内容</h2>
+  <div class="business-cards">
+    <div class="card">
+      <h3>AI・ソフトウェア開発</h3>
+      <p>大規模言語モデル(LLM)を活用した業務自動化システム、AIエージェントの企画・開発・運用。企業のDX推進を技術面から支援します。</p>
+    </div>
+    <div class="card">
+      <h3>金融データ分析</h3>
+      <p>株式・為替市場のデータ分析システム開発。リアルタイムデータ処理基盤の構築と、機械学習を用いた市場分析ツールの提供。</p>
+    </div>
+    <div class="card">
+      <h3>ハードウェア開発</h3>
+      <p>次世代入力デバイス「KAKERU」プロジェクト。人間工学に基づいた革新的な電子機器の企画・設計・開発。</p>
+    </div>
+    <div class="card">
+      <h3>ITコンサルティング</h3>
+      <p>AI導入戦略の策定、システムアーキテクチャ設計、クラウドインフラ構築支援。技術選定から実装まで一貫したコンサルティング。</p>
+    </div>
+  </div>
+</section>
+
+<section id="representative">
+  <h2>代表者</h2>
+  <div class="representative">
+    <div class="bio">
+      <h3>額田 健太郎</h3>
+      <div class="title">代表取締役</div>
+      <p>税理士法人でのIT部門責任者としての経験を経て、2026年3月に株式会社無窮を設立。AIテクノロジーと金融分析の融合領域で、実務に根差したソリューション開発に取り組んでいます。ソフトウェアエンジニアリング、クラウドインフラ、データサイエンスを専門とし、最新のAI技術を実用的なビジネスツールへと昇華させることをミッションとしています。</p>
+    </div>
+  </div>
+</section>
+
+<section id="company">
+  <h2>会社概要</h2>
+  <table class="info-table">
+    <tr><th>商号</th><td>株式会社無窮（MUKYU Inc.）</td></tr>
+    <tr><th>設立</th><td>2026年3月3日</td></tr>
+    <tr><th>代表取締役</th><td>額田 健太郎</td></tr>
+    <tr><th>所在地</th><td>〒639-1037 奈良県大和郡山市額田部寺町31番地</td></tr>
+    <tr><th>資本金</th><td>500,000円</td></tr>
+    <tr><th>事業内容</th><td>
+      ソフトウェアの企画・開発・販売及び保守<br>
+      金融商品分析システム並びにデータ分析ツールの開発及び販売<br>
+      電子機器並びにハードウェアの企画・設計・開発・製造及び販売<br>
+      情報処理サービス及びIT関連コンサルティング業<br>
+      経営コンサルティング業<br>
+      その他
+    </td></tr>
+    <tr><th>法人番号</th><td>9150001028777</td></tr>
+  </table>
+</section>
+
+<section id="contact">
+  <h2>お問い合わせ</h2>
+  <p>事業に関するお問い合わせは、下記メールアドレスまでお気軽にご連絡ください。</p>
+  <p style="margin-top: 16px; font-size: 1.1rem;">
+    <strong>Email:</strong> admin@mukyu.jp
+  </p>
+</section>
+
+<footer>
+  <p>&copy; 2026 株式会社無窮 / MUKYU Inc. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
